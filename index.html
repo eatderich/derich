@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The World We're Growing Into</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+    header, nav, footer, section {
+      transition: all 0.6s ease-in-out;
+    }
+    header {
+      background: #1e1e1e;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #9cdcfe;
+    }
+    .toggle-mode {
+      float: right;
+      margin-top: -40px;
+      margin-right: 1em;
+      background: #555;
+      border: none;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    section:nth-of-type(even) {
+      animation-delay: 0.3s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    h3 {
+      color: #1f4e79;
+    }
+    ul {
+      margin-left: 1.2em;
+    }
+    blockquote {
+      background: #f0f8ff;
+      border-left: 6px solid #aad6ff;
+      margin: 1em 0;
+      padding: 1em;
+      font-style: italic;
+    }
+    .trend {
+      background: #e9f5ff;
+      border: 1px solid #b3d7f5;
+      border-radius: 10px;
+      padding: 1.5em;
+      margin-bottom: 2em;
+    }
+    .futures {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+    .box {
+      flex: 1;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1em;
+      border-radius: 8px;
+      min-width: 280px;
+    }
+    footer {
+      background: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 2em;
+      margin-top: 3em;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 400px;
+      margin-top: 2em;
+    }
+    .dark-mode {
+      background: #121212;
+      color: #f0f0f0;
+    }
+    .dark-mode nav, .dark-mode header, .dark-mode footer {
+      background: #000;
+    }
+    .dark-mode .box, .dark-mode .trend {
+      background: #1f1f1f;
+      border-color: #333;
+    }
+    .media {
+      margin-top: 1em;
+      text-align: center;
+    }
+    .media iframe, .media audio {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      display: block;
+    }
+    .parallax {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px;
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>The World We're Growing Into</h1>
+    <p>Virtual Museum by Derich Joaquin • Grade 12 HUMSS</p>
+    <button class="toggle-mode" onclick="toggleMode()" aria-label="Toggle Dark or Light Mode">Toggle Dark/Light Mode</button>
+  </header>
+  <nav role="navigation" aria-label="Main Navigation">
+    <a href="#intro">Home</a>
+    <a href="#trend1">Mental Health</a>
+    <a href="#trend2">Climate Crisis</a>
+    <a href="#sufjan">Resource Person</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+  <div class="parallax" role="img" aria-label="Ocean wave representing climate awareness"></div>
+
+  <section id="intro">
+    <h2>Welcome</h2>
+    <p>This virtual museum explores two powerful trends shaping our future: the growing focus on mental health and the intensifying climate crisis. These aren’t just global movements—they affect our daily lives. Explore the interventions, possible futures, and my personal reflections as a Filipino youth navigating a rapidly changing world.</p>
+  </section>
+
+  <section id="trend1" class="trend">
+    <h2>Trend 1: The Mental Health Movement</h2>
+    <p>Today, mental health is more openly discussed than ever before. Our generation has made therapy, emotional honesty, and self-awareness more acceptable. Yet, we must ask: is this awareness translating into real change?</p>
+    <h3>Interventions</h3>
+    <ul>
+      <li><strong>Social:</strong> Gen Z uses platforms like TikTok and Instagram to normalize therapy and vulnerability.</li>
+      <li><strong>Political:</strong> More schools implement mental health programs and provide access to counselors.</li>
+      <li><strong>Cultural:</strong> Celebrities like Billie Eilish and Sufjan Stevens speak openly about mental health.</li>
+    </ul>
+    <h3>Future Predictions</h3>
+    <div class="futures">
+      <div class="box">
+        <h4>Utopia 🌿</h4>
+        <p>Everyone has access to mental health care. Emotional well-being is treated with the same importance as physical health.</p>
+      </div>
+      <div class="box">
+        <h4>Dystopia 🌪️</h4>
+        <p>"Self-care" is commodified. True healing is inaccessible to many, hidden behind corporate wellness trends.</p>
+      </div>
+    </div>
+    <h3>My Stance</h3>
+    <blockquote>Healing is not aesthetic. It is messy, nonlinear, and valid even without a filter. Mental health should be a human right, not a trend.</blockquote>
+  </section>
+
+  <section id="trend2" class="trend">
+    <h2>Trend 2: Climate Crisis Awareness</h2>
+    <p>Eco-anxiety is real—and rising. Many youths turn to sustainable lifestyles, activism, and community-driven solutions out of care and fear for the planet.</p>
+    <h3>Interventions</h3>
+    <ul>
+      <li><strong>Social:</strong> Youth climate strikes, zero-waste movements, and plant-based shifts grow rapidly.</li>
+      <li><strong>Political:</strong> Young coalitions advocate for climate laws and education reform.</li>
+      <li><strong>Cultural:</strong> Studio Ghibli films, climate fiction, and pop music reflect urgent environmental themes.</li>
+    </ul>
+    <h3>Future Predictions</h3>
+    <div class="futures">
+      <div class="box">
+        <h4>Utopia 🌱</h4>
+        <p>We transition to regenerative living. Indigenous knowledge and youth advocacy drive global climate action.</p>
+      </div>
+      <div class="box">
+        <h4>Dystopia 🔥</h4>
+        <p>Sea levels rise, inequality worsens. The privileged escape while the rest face disaster.</p>
+      </div>
+    </div>
+    <h3>My Stance</h3>
+    <blockquote>My climate anxiety shows that I care. We can’t give up. If we feel deeply, we can act with purpose. Hope isn’t naive—it’s revolutionary.</blockquote>
+  </section>
+
+  <section id="sufjan">
+    <h2>Resource Person: Sufjan Stevens</h2>
+    <p><strong>Sufjan Stevens</strong> is a singer-songwriter who explores mental illness, grief, and memory in his music. His lyrics resonate with those silently struggling, reminding us that art can offer companionship, not just solutions.</p>
+    <blockquote>“There is someone right here who knows you more than you do.” — Sufjan Stevens</blockquote>
+    <div class="media">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lJJT00wqlOo" title="Sufjan Stevens - Should Have Known Better" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="reflection">
+    <h2>Personal Reflection</h2>
+    <blockquote>“Perhaps we don't like what we see... There is someone right here who knows you more than you do.” — Sufjan Stevens</blockquote>
+    <p>Trends are more than just viral movements—they’re mirrors. They reflect our fears, dreams, and priorities. Through this project, I’ve realized that my anxiety—whether about mental health or the climate—is not a flaw. It’s proof of empathy. It’s a call to act.</p>
+  </section>
+
+  <section id="feedback">
+    <h2>Visitor Reflection</h2>
+    <p>What did you feel while visiting this virtual museum? Which trend impacted you the most? Your thoughts matter.</p>
+    <p>Share your reflection here:</p>
+    <iframe src="https://forms.gle/AthBWiRDAWuZX5Q37">Loading…</iframe>
+  </section>
+
+  <footer>
+    <p>Website created with insight and hope by Derich Joaquin • 2025</p>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
